@@ -3,11 +3,13 @@
     <base-card>
       <header>
         <h3>{{ title }}</h3>
-        <button>Delete</button>
+        <base-button mode='ghost'>Delete</base-button>
       </header>
       <p>{{ description }}</p>
       <nav>
-        <a v-bind:href="link">See Resource</a>
+        <a v-bind:href="link">
+          See Resource
+        </a>
       </nav>
     </base-card>
   </li>
@@ -34,10 +36,16 @@ header {
 h3 {
   font-size: 1.25rem;
   margin: 0.5rem 0;
+  color: #640032;
 }
 
 p {
   margin: 0.5rem 0;
+}
+
+nav,
+a {
+  margin-top: 1.5rem;
 }
 
 a {
